@@ -1,0 +1,10 @@
+cmake_minimum_required( VERSION 3.0 )
+project( MON_PROJET )
+set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -Wextra" )
+add_executable( main.out main.cpp fibonacci.cpp vecteur3.cpp )
+find_package( PkgConfig REQUIRED )
+pkg_check_modules( PKG REQUIRED cpputest )
+include_directories( ${PKG_INCLUDE_DIRS} )
+add_executable( main_test.out main_test.cpp fibonacci.cpp
+    Fibonacci_test.cpp vecteur3.cpp vecteur3_test.cpp )
+target_link_libraries( main_test.out ${PKG_LIBRARIES} )

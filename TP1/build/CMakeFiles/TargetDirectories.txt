@@ -1,0 +1,2 @@
+/etudiants/mlenoir/L3_CPP_etudiant/TP1/build/CMakeFiles/main.out.dir
+/etudiants/mlenoir/L3_CPP_etudiant/TP1/build/CMakeFiles/main_test.out.dir

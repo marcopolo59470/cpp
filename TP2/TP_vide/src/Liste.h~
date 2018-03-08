@@ -1,0 +1,16 @@
+#ifndef Liste
+#define Liste 
+struct Noeud {
+	int _valeur;
+	Noeud* _suivant;
+};
+
+struct Liste{
+	Noeud* _tete;
+	Liste();
+	void ajouterDevant(int valeur);
+	const int getTaille();
+	const int getElement(int indice);
+};
+
+#endif
